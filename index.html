@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="resets.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/resets.css">
   <!-- google fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,111 +21,117 @@
 
   <!-- navbar -->
   <nav class="navbar">
-    <div class="navbar__container">
-      <div class="logo">
-        <img src="./assets/images/logo-al-transparent.png" alt="logo">
+    <div class="container">
+      <div class="navbar__container">
+        <div class="logo">
+          <a href="#">
+            <img src="./assets/images/logo-al-full.jpg" alt="logo">
+          </a>
+        </div>
+        <ul class="navbar__menu">
+          <li><a href="#aboutme">About</a></li>
+          <li><a href="#myprojects">Projects</a></li>
+          <li><a href="#contactme">Contact</a></li>
+        </ul>
       </div>
-      <ul class="navbar__menu">
-        <li><a href="#aboutme">About</a></li>
-        <li><a href="#myprojects">Projects</a></li>
-        <li><a href="#contactme">Contact</a></li>
-      </ul>
     </div>
   </nav>
     
   <!-- hero section -->
   <section class="hero">
-    <div class="hero__content">
-      <h1 class="hero__title">Hi, I'm Akiko</h1>
+    <div class="container">
+      <h1 class="hero__title">Hi, I'm Akiko!</h1>
       <p class="hero__subtitle">Web Developer</p>
     </div>
   </section>
 
   <!-- about section -->
-  <section class="about" id="aboutme">
+  <section class="about scroll" id="aboutme">
     <h2 class="about__heading">About</h2>
     <p class="about__title">Hi there! My name is Akiko.</p>
-    <p class="about__text">I'm currently studying to become a full-stock Web Developerat DCI.</p>
-    <p class="about__text">
-      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium et a reiciendis iusto placeat ipsa ducimus quae vero. Est amet illo quia quod facere debitis soluta maiores nobis, odio eum.
-    </p>
+    <div class="container">
+      <!-- <p class="about__text">I'm currently studying to become a full-stock Web Developerat DCI.</p> -->
+      <p class="about__text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quam a recusandae dolor rerum perspiciatis, porro nisi consectetur distinctio minima fugit sit dignissimos consequuntur. Quae quo, consectetur doloribus provident dolores ut, dignissimos corporis architecto sint amet odio voluptatem voluptate molestiae animi dicta tenetur necessitatibus placeat a explicabo ea, repudiandae fugit!
+      </p>
+    </div>
   </section>
 
   <!-- skills section -->
   <section class="skills">
     <h2 class="skills__heading">Skills</h2>
-    <div class="skills__container">
-      <div class="skills__card">
-        <p class="skills__title">Programming Languages:</p>
-          <div class="skills__text">
-            <p>HTML</p>
-            <p>CSS</p>
-            <p>Sass</p>
-            <p>JavaScript</p>
-            <p>C++</p>
-            <p>Visual Basic</p>
-            <p>Turbo C</p>
-          </div>
-      </div>
-
-      <div class="skills__card">
-        <p class="skills__title">Libraries & Frameworks:</p>
+    <div class="container">
+      <div class="skills__container">
         <div class="skills__text">
-          <p>Boostrap</p>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Markdown</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>VS Code</li>
+          <li>Linux</li>
+          <li>Photoshop</li>
+          <li>Sass</li>
+          <li>Boostrap</li>
         </div>
-      </div>
-
-      <div class="skills__card">
-        <p class="skills__title">Tools & Platforms:</p>
-          <div class="skill__text">
-            <p>Git</p>
-            <p>GitHub</p>
-            <p>VS Code</p>
-          </div>
       </div>
     </div>
   </section>
 
   <!-- project section -->
-  <section class="project" id="myprojects">
+  <section class="project scroll" id="myprojects">
     <h2 class="project__heading">Projects</h2>
-    <div class="project__container">
-     <div class="project__card">
-      <img src="./assets/images/proj.png" alt="project">
-    </div>
-    <div class="project__card">
-      <img src="./assets/images/proj.png" alt="project">
-    </div>
-    <div class="project__card">
-      <img src="./assets/images/proj.png" alt="project">
+    <div class="container">
+      <div class="project__container">
+      <div class="project__card">
+        <img src="./assets/images/proj.png" alt="project">
+      </div>
+      <div class="project__card">
+        <img src="./assets/images/proj1.jpg" alt="project">
+      </div>
+      <div class="project__card">
+        <img src="./assets/images/proj2.jpg" alt="project">
+      </div>
+      <div class="project__card">
+        <img src="./assets/images/proj3.jpg" alt="project">
+      </div>
+      <div class="project__card">
+        <img src="./assets/images/proj4.jpg" alt="project">
+      </div>
+      <div class="project__card">
+        <img src="./assets/images/proj5.jpg" alt="project">
+      </div>
     </div>
   </section>
 
   <!-- contact -->
-<section class="contact" id="contactme">
+<section class="contact scroll" id="contactme">
   <h2 class="contact__heading">Contact me</h2>
-  <div class="contact__container">
-    <div class="contact__icon">
-      <a href="https://github.com/akiko-luka" target="_blank">
-        <i class="fa-brands fa-github"></i>
-      </a>
-    </div>
-    <div class="contact__icon">
-      <a href="https://linkedin.com/in/akiko-luka" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-      </a>
-    </div>
-    <div class="contact__icon">
-      <a href="mailto:akiko.luka@dci-student.org" target="_blank">
-        <i class="fa-solid fa-envelope"></i>
-      </a>
+  <div class="container">
+    <div class="contact__container">
+      <div class="contact__icon">
+        <a href="https://github.com/akiko-luka" target="_blank">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </div>
+      <div class="contact__icon">
+        <a href="https://linkedin.com/in/akiko-luka" target="_blank">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+      </div>
+      <div class="contact__icon">
+        <a href="mailto:akiko.luka@dci-student.org" target="_blank">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- footer -->
 <footer class="footer">
-  <p>&copy; 2023</p>
+  <p>Akiko &copy; 2023 &#128522;</p>
 </footer>
 
 </body>
