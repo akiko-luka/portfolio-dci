@@ -87,6 +87,7 @@
   
   /* hero section */
   .hero {
+    border: 1px solid black;
     height: 100vh;
     display: flex;
     align-items: center;
@@ -94,15 +95,44 @@
     text-align: center;
   }
 
+  .hero img {
+    /* border: 1px solid black; */
+    width: 350px;
+  }
+
   .hero__title {
     font-size: 4rem;
     margin-bottom: 1rem;
+    animation: typing 8000ms steps(14) forwards;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    25%, 50%, 75%, 100% {
+      width: 375.47px;
+    }
   }
 
   .hero__subtitle {
     font-size: 2rem;
     font-weight: 500;
+    animation: typing 8000ms steps(12) forwards;
+    overflow: hidden;
+    white-space: nowrap;
   }
+
+  /* @keyframes slide-top {
+    0% {
+      transform: translateY(100px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+  } */
 
   /* about section */
   .about {
@@ -230,6 +260,7 @@
     padding: 10px;
     transition: transform 300ms;
     cursor: pointer;
+    margin-bottom: 2rem;
   }
 
   .fa-brands:hover,
@@ -240,6 +271,7 @@
   }
 
   .footer {
+    border: 1px solid red;
     padding: 2rem;
     text-align: center;
 
