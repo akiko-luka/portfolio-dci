@@ -323,7 +323,7 @@ p {
   }
 }
 
-@media screen and (min-width: 412px) {
+/* @media screen and (min-width: 412px) and (max-width: 413px) {
   .navbar__menu a {
     font-size: 1.25rem;
   }
@@ -344,4 +344,4 @@ p {
   .hero__subtitle {
     font-size: 2rem;
   }
-}
+} */
