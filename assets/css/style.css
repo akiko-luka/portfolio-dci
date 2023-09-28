@@ -50,8 +50,8 @@
 .about__heading,
 .skills__heading,
 .project__heading {
-  /* margin: 2rem 2rem; */
-  margin-bottom: 3rem;
+  margin-top: 1rem;
+  margin-bottom: 4rem;
 }
 
 .skills__heading,
@@ -69,6 +69,7 @@
     height: 100%;
     width: 100%;
     top: 0;
+    z-index: 1;
   }
   .navbar__container {
     /* border: 1px solid salmon; */
@@ -76,10 +77,12 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
+    padding: 5px;
   }
   
   .navbar img {
     width: 70px;
+    margin-left: 10px;
   }
   
   .navbar__menu {
@@ -117,7 +120,7 @@
     justify-content: center;
     text-align: center;
     margin-bottom: 10px;
-  }
+    }
 
   .hero__title::before {
     content: "|";
@@ -125,7 +128,7 @@
     top: 0;
     right: 0;
     width: 2px;
-    font-size: 4rem;
+    font-size: 5.5rem;
     background: var(--sub-font);
     animation: blinkCursor 800ms steps(1) infinite;
   }
@@ -146,14 +149,15 @@
   }
 
   .hero__title {
-    width: 400px;
-    position: relative;
-    font-size: 4rem;
-    font-weight: 700;
+    /* border: 1px solid red; */
+    padding: 5px;
+    font-size: 5.5rem;
+    font-weight: 900;
     margin-bottom: 1rem;
     animation: typing 8000ms steps(14) forwards;
     overflow: hidden;
     white-space: nowrap;
+    position: relative;
   }
 
   @keyframes typing {
@@ -161,7 +165,8 @@
       width: 0;
     }
     25%, 50%, 75%, 100% {
-      width: 375.47px;
+      /* width: 375.47px; */
+      width: 550px;
     }
   }
 
@@ -171,7 +176,8 @@
     animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation-delay: 2000ms;
     overflow: hidden;
-    white-space: nowrap;
+
+    /* white-space: nowrap; */
   }
 
   @keyframes focus-in-expand-fwd {
@@ -266,6 +272,7 @@
   /* contact section */
   .contact__heading {
     /* margin: 2rem 2rem; */
+    margin-top: 5rem;
     margin-bottom: 5rem;
   }
 
