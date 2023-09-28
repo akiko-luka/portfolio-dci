@@ -95,7 +95,7 @@ p {
   border: 1px solid transparent;
   border-radius: 5px;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   color: var(--sub-font);
   padding: 10px;
   transition: transform 300ms;
@@ -110,10 +110,6 @@ p {
 
 /* hero section */
 .hero {
-  background: url(../images/hero-bg-design.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -128,8 +124,8 @@ p {
   top: 0;
   right: 0;
   width: 2px;
-  font-size: 5rem;
-  background: var(--sub-font);
+  font-size: 3rem;
+  background: var(--main-font-color);
   animation: blinkCursor 800ms steps(1) infinite;
 }
 
@@ -142,19 +138,12 @@ p {
   }
 }
 
-.hero__title,
-.hero__subtitle {
-  color: var(--sub-font);
-  text-shadow: 4px 3px 1px var(--card-shadow),
-  -2px -2px 0px var(--card-shadow);
-}
-
 .hero__title {
   padding: 5px;
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 900;
   margin-bottom: 1rem;
-  animation: typing 8000ms steps(14) forwards;
+  animation: typing 8000ms steps(12) forwards;
   overflow: hidden;
   white-space: nowrap;
   position: relative;
@@ -165,12 +154,13 @@ p {
     width: 0;
   }
   25%, 50%, 75%, 100% {
-    width: 550px;
+    /* width: 375.47px; */
+    width: 360px;
   }
 }
 
 .hero__subtitle {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 500;
   animation: focus-in-expand-fwd 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
   animation-delay: 2000ms;
@@ -312,6 +302,28 @@ p {
 }
 
 @media screen and (min-width: 786px) {
+  .navbar__menu a {
+    font-size: 1.5rem;
+  }
+
+  .hero__title::before,
+  .hero__title {
+    font-size: 5rem;
+  }
+
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    25%, 50%, 75%, 100% {
+      width: 550px;
+    }
+  }
+
+  .hero__subtitle {
+    font-size: 3rem;
+  }
+
   .skills__container,
   .project__container {
     flex-direction: row;
@@ -322,26 +334,3 @@ p {
     margin: auto;
   }
 }
-
-/* @media screen and (min-width: 412px) and (max-width: 413px) {
-  .navbar__menu a {
-    font-size: 1.25rem;
-  }
-
-  .hero__title::before,
-  .hero__title {
-    font-size: 3rem;
-  }
-  @keyframes typing {
-    0% {
-      width: 0;
-    }
-    25%, 50%, 75%, 100% {
-      width: 375px;
-    }
-  }
-
-  .hero__subtitle {
-    font-size: 2rem;
-  }
-} */
