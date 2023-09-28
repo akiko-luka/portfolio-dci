@@ -128,7 +128,7 @@ p {
   top: 0;
   right: 0;
   width: 2px;
-  font-size: 5.5rem;
+  font-size: 5rem;
   background: var(--sub-font);
   animation: blinkCursor 800ms steps(1) infinite;
 }
@@ -151,7 +151,7 @@ p {
 
 .hero__title {
   padding: 5px;
-  font-size: 5.5rem;
+  font-size: 5rem;
   font-weight: 900;
   margin-bottom: 1rem;
   animation: typing 8000ms steps(14) forwards;
@@ -320,5 +320,28 @@ p {
   .skills__text {
     width: 50%;
     margin: auto;
+  }
+}
+
+@media screen and (min-width: 412px) {
+  .navbar__menu a {
+    font-size: 1.25rem;
+  }
+
+  .hero__title::before,
+  .hero__title {
+    font-size: 3rem;
+  }
+  @keyframes typing {
+    0% {
+      width: 0;
+    }
+    25%, 50%, 75%, 100% {
+      width: 375px;
+    }
+  }
+
+  .hero__subtitle {
+    font-size: 2rem;
   }
 }
