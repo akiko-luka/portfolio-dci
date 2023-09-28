@@ -1,15 +1,10 @@
 :root {
     /* text color */
-    /* yale blue */
-   /* --main-font-color: #183B63; */
-   /* prussian blue */
-   --main-font-color: #112A46;
+   --main-font-color: #112A46; /* prussian blue */
    --sub-font: #FFFFFF;
 
     /* bg color */
     --navbar-bg-color: #004457;
-    /* --main-bg-color: #E1ECF7; */
-    /* --main-bg-color: #ededed; */
     --main-bg-color: #ffffff;
     --card-bg-color: #a2a8ae;
 
@@ -17,7 +12,6 @@
     --card-border: #ffffff1a;
     --card-shadow: #00000099;
   }
-
 
   body {
     font-family: 'Roboto', sans-serif;
@@ -44,6 +38,28 @@
   .scroll {
     scroll-margin-top: 100px;
   }
+  
+  /* repeated codes */
+  .about,
+  .skills,
+  .project,
+  .contact {
+    padding: 2rem;
+  }
+
+.about__heading,
+.skills__heading,
+.project__heading {
+  /* margin: 2rem 2rem; */
+  margin-bottom: 3rem;
+}
+
+.skills__heading,
+.project__heading,
+.contact,
+.footer {
+  text-align: center;
+}
 
   /* navbar */
   .navbar {
@@ -91,7 +107,6 @@
   
   /* hero section */
   .hero {
-    /* border: 1px solid black; */
     background: url(../images/hero-bg-design.jpg);
     background-position: center;
     background-size: cover;
@@ -104,11 +119,6 @@
     margin-bottom: 10px;
   }
 
-  /* .hero img {
-    border: 1px solid black;
-    width: 350px;
-  } */
-
   .hero__title::before {
     content: "|";
     position: absolute;
@@ -116,7 +126,6 @@
     right: 0;
     width: 2px;
     font-size: 4rem;
-    /* height: 50%; */
     background: var(--sub-font);
     animation: blinkCursor 800ms steps(1) infinite;
   }
@@ -132,11 +141,11 @@
 
   .hero__title, .hero__subtitle {
     color: var(--sub-font);
-    text-shadow: 4px 3px 1px var(--card-shadow)
+    text-shadow: 4px 3px 1px var(--card-shadow),
+    -2px -2px 0px var(--card-shadow);
   }
 
   .hero__title {
-    /* border: 1px solid black; */
     width: 400px;
     position: relative;
     font-size: 4rem;
@@ -145,8 +154,6 @@
     animation: typing 8000ms steps(14) forwards;
     overflow: hidden;
     white-space: nowrap;
-    /* text-shadow: 2px 2px 0px var(--card-shadow),
-    -2px -2px 0px var(--card-shadow); */
   }
 
   @keyframes typing {
@@ -183,14 +190,9 @@
 
   /* about section */
   .about {
-    padding: 2rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-  }
-  
-  .about__heading {
-    margin-bottom: 2rem;
   }
   
   .about__title {
@@ -208,15 +210,6 @@
   }
 
   /* skills section */
-  .skills {
-    padding: 2rem;
-  }
-  
-  .skills__heading {
-    margin: 2rem 2rem;
-    text-align: center;
-  }
-  
   .skills__container {
     display: flex;
     flex-wrap: wrap;
@@ -247,15 +240,6 @@
   }
   
   /* project section */
-  .project {
-    padding: 2rem;
-  }
-
-  .project__heading {
-    margin: 2rem 2rem;
-    text-align: center;
-  }
-
   .project__container {
     display: flex;
     flex-wrap: wrap;
@@ -280,20 +264,16 @@
   }
 
   /* contact section */
-  .contact {
-    padding: 2rem;
-    text-align: center;
-  }
-
   .contact__heading {
-    margin: 2rem 2rem;
+    /* margin: 2rem 2rem; */
+    margin-bottom: 5rem;
   }
 
   .contact__container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 1rem;
+    /* padding: 1rem; */
     column-gap: 2.5rem;
   }
 
@@ -307,7 +287,6 @@
     color: var(--main-font-color);
     padding: 10px;
     transition: transform 300ms;
-    margin-top: 3rem;
     margin-bottom: 5rem;
   }
 
@@ -322,8 +301,6 @@
   .footer {
     margin-top: 2rem;
     padding: 2rem;
-    text-align: center;
-
   }
 
   @media screen and (min-width: 786px) {
