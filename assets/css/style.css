@@ -1,9 +1,10 @@
 :root {
     /* text color */
-   --main-font-color: #183B63;
+    /* yale blue */
+   /* --main-font-color: #183B63; */
+   /* prussian blue */
+   --main-font-color: #112A46;
    --navbar-font: #FFFFFF;
-   /* --navbar-font: #E1ECF7; */
-   /* #ededed */
 
     /* bg color */
     --navbar-bg-color: #004457;
@@ -50,8 +51,8 @@
     position: sticky;
     padding: 10px;
     height: 100%;
-    top: 0;
     width: 100%;
+    top: 0;
   }
   .navbar__container {
     /* border: 1px solid salmon; */
@@ -59,7 +60,6 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
   }
   
   .navbar img {
@@ -68,7 +68,7 @@
   
   .navbar__menu {
     display: flex;
-    column-gap: 20px;
+    /* column-gap: 20px; */
   }
   
   .navbar__menu a {
@@ -91,13 +91,16 @@
   /* hero section */
   .hero {
     /* border: 1px solid black; */
-    /* background: url(../images/bg.jpg); */
-    /* opacity: 1; */
+    background: url(../images/hero-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 2rem;
   }
 
   .hero img {
@@ -129,15 +132,6 @@
     overflow: hidden;
     white-space: nowrap;
   }
-
-  /* @keyframes slide-top {
-    0% {
-      transform: translateY(100px);
-    }
-    100% {
-      transform: translateY(-5px);
-    }
-  } */
 
   /* about section */
   .about {
@@ -197,7 +191,7 @@
     border: 1px solid var(--card-border);
     box-shadow: 0 3px 5px var(--card-shadow);
     border-radius: 50px;
-    /* background: goldenrod; */
+    background: #FFE49F;
     padding: 0.5rem;
     text-align: center;
     font-weight: 500;
