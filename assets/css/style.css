@@ -2,11 +2,13 @@
     /* text color */
    --main-font-color: #183B63;
    --navbar-font: #FFFFFF;
+   /* --navbar-font: #E1ECF7; */
    /* #ededed */
 
     /* bg color */
     --navbar-bg-color: #004457;
-    --main-bg-color: #E1ECF7;
+    /* --main-bg-color: #E1ECF7; */
+    --main-bg-color: #ededed;
     --card-bg-color: #a2a8ae;
 
     /* border & shadow*/
@@ -87,7 +89,9 @@
   
   /* hero section */
   .hero {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    /* background: url(../images/bg.jpg); */
+    /* opacity: 1; */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -271,7 +275,7 @@
   }
 
   .footer {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 2rem;
     text-align: center;
 
