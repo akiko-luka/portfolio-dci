@@ -91,10 +91,10 @@
   /* hero section */
   .hero {
     /* border: 1px solid black; */
-    background: url(../images/hero-bg.jpg);
+    /* background: url(../images/hero-bg.jpg);
     background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-size: contain;
+    background-repeat: no-repeat; */
     height: 100vh;
     display: flex;
     align-items: center;
@@ -108,12 +108,36 @@
     width: 350px;
   }
 
+  .hero__title::before {
+    content: "|";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    font-size: 4rem;
+    /* height: 50%; */
+    background: var(--main-font-color);
+    animation: blinkCursor 800ms steps(3) infinite;
+  }
+  
+  @keyframes blinkCursor {
+    0%, 75% {
+      opacity: 1;
+    }
+    76%, 100% {
+      opacity: 0;
+    }
+  }
+
   .hero__title {
+    position: relative;
     font-size: 4rem;
     margin-bottom: 1rem;
     animation: typing 8000ms steps(14) forwards;
     overflow: hidden;
     white-space: nowrap;
+    /* text-shadow: 2px 2px 0px var(--card-shadow),
+    -2px -2px 0px var(--card-shadow); */
   }
 
   @keyframes typing {
@@ -128,9 +152,21 @@
   .hero__subtitle {
     font-size: 2rem;
     font-weight: 500;
-    animation: typing 8000ms steps(12) forwards;
+    animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+    animation-delay: 1900ms;
     overflow: hidden;
     white-space: nowrap;
+  }
+
+  @keyframes text-focus-in {
+    0%{
+      filter: blur(12px);
+      opacity: 0;
+    }
+    75%, 100% {
+      filter: blur(0px);
+      opacity: 1;
+    }
   }
 
   /* about section */
