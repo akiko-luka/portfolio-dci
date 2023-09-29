@@ -130,7 +130,7 @@ p {
   width: 2px;
   font-size: 3rem;
   background: var(--main-font-color);
-  animation: blinkCursor 800ms steps(1) infinite;
+  animation: blinkCursor 5000ms steps(3) forwards;
 }
 
 @keyframes blinkCursor {
