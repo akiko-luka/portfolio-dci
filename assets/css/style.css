@@ -37,7 +37,7 @@ p {
 .scroll {
   scroll-margin-top: 100px;
 }
-  
+
 /* repeated codes */
 .about,
 .skills,
@@ -69,11 +69,9 @@ p {
   width: 100%;
   top: 0;
   z-index: 1;
-
 }
 
 .navbar__container {
-  /* border: 1px solid salmon; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -88,7 +86,6 @@ p {
 
 .navbar__menu {
   display: flex;
-  /* column-gap: 20px; */
 }
 
 .navbar__menu a {
@@ -207,7 +204,6 @@ p {
 /* skills section */
 .skills {
   background: var(--sub-bg-color);
-
 }
 
 .skills__container {
@@ -268,7 +264,6 @@ p {
 /* contact section */
 .contact {
   background: var(--sub-bg-color);
-
 }
 
 .contact__heading {
@@ -280,7 +275,6 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* padding: 1rem; */
   column-gap: 2.5rem;
 }
 
