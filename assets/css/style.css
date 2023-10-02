@@ -6,7 +6,7 @@
 
   /* bg color */
   --navbar-bg-color: #004457;
-  --sub-bg-color: #F8F9FA;
+  --sub-bg-color: #F2F2F2;
 
   /* border & shadow*/
   --card-border: #ffffff1a;
@@ -293,7 +293,7 @@ p {
 }
 
 .fa-brands,
-.fa-solid {
+.submit-btn {
   cursor: pointer;
   border: 1px solid transparent;
   box-shadow: 0 3px 5px var(--card-shadow);
@@ -302,15 +302,48 @@ p {
   color: var(--main-font-color);
   padding: 10px;
   transition: transform 300ms;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 .fa-brands:hover,
-.fa-solid:hover {
+.submit-btn:hover {
   /* border: 3px solid var(--main-font-color); */
   transform: translateY(-10px);
   box-shadow: 0 3px 5px var(--card-shadow);
   padding: 10px;
+}
+
+form {
+  /* max-width: 700px; */
+  display: grid;
+  place-content: center;
+  align-self: center;
+  justify-content: center;
+  /* border: 2px solid var(--card-border);
+  box-shadow: 0 3px 5px var(--card-shadow);
+  border-radius: 10px; */
+  padding: 1rem;
+}
+
+label {
+  text-align: start;
+  padding: 0.5rem 0;
+  font-weight: 500;
+}
+
+input, textarea {
+  padding: 0.5rem;
+  border: 2px solid var(--main-font-color);
+}
+
+.submit-btn {
+  width: 10rem;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  background: var(--main-font-color);
+  border-radius: 5px;
+  color: var(--white-bg-navfont);
 }
 
 .footer {

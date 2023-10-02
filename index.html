@@ -127,12 +127,25 @@
           <i class="fa-brands fa-linkedin"></i>
         </a>
       </div>
-      <div class="contact__icon">
+      <!-- <div class="contact__icon">
         <a href="mailto:akiko@example.com" target="_blank">
           <i class="fa-solid fa-envelope"></i>
         </a>
-      </div>
+      </div> -->
     </div>
+
+    <form action="" method="POST">
+      <label for="name">Name:</label>
+      <input type="text" name="name" id="name"
+      placeholder="First and Last Name" required minlength="3" />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email"
+      placeholder="Email address" required />
+      <label for="message">Your message:</label>
+      <textarea name="message" id="" cols="45" rows="10"
+      placeholder="Your message" required></textarea>
+      <input type="submit" value="Send" class="submit-btn">
+    </form>
   </div>
 </section>
 
