@@ -278,14 +278,18 @@ p {
   column-gap: 2.5rem;
 }
 
+.fa-brands {
+  border-radius: 50%;
+  font-size: 2.5rem;
+  color: var(--main-font-color);
+  background: var(--white-bg-navfont);
+}
+
 .fa-brands,
 .submit-btn {
   cursor: pointer;
   border: 1px solid transparent;
   box-shadow: 0 3px 5px var(--card-shadow);
-  border-radius: 50%;
-  font-size: 2.5rem;
-  color: var(--main-font-color);
   padding: 10px;
   transition: transform 300ms;
   margin-bottom: 3rem;
