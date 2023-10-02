@@ -172,7 +172,7 @@ p {
   font-weight: 500;
   opacity: 0;
   transform: translateY(3rem);
-  animation: fadeInUp 2000ms ease 2800ms forwards;
+  animation: fadeInUp 2000ms ease 2400ms forwards;
 }
 
 @keyframes fadeInUp {
