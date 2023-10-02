@@ -69,8 +69,6 @@ p {
   width: 100%;
   top: 0;
   z-index: 1;
-  max-width: 1200px;
-  align-self: center;
 }
 
 .navbar__container {
@@ -121,9 +119,6 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1200px;
-  width: 100%;
-  align-self: center;
 }
 
 .hero__title::before {
@@ -211,9 +206,6 @@ p {
 /* skills section */
 .skills {
   background: var(--sub-bg-color);
-  max-width: 1200px;
-  width: 100%;
-  align-self: center;
 }
 
 .skills__container {
@@ -274,9 +266,6 @@ p {
 /* contact section */
 .contact {
   background: var(--sub-bg-color);
-  max-width: 1200px;
-  width: 100%;
-  align-self: center;
 }
 
 .contact__heading {
@@ -307,21 +296,16 @@ p {
 
 .fa-brands:hover,
 .submit-btn:hover {
-  /* border: 3px solid var(--main-font-color); */
   transform: translateY(-10px);
   box-shadow: 0 3px 5px var(--card-shadow);
   padding: 10px;
 }
 
 form {
-  /* max-width: 700px; */
   display: grid;
   place-content: center;
   align-self: center;
   justify-content: center;
-  /* border: 2px solid var(--card-border);
-  box-shadow: 0 3px 5px var(--card-shadow);
-  border-radius: 10px; */
   padding: 1rem;
 }
 
