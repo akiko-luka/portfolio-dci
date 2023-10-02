@@ -69,8 +69,8 @@ p {
   width: 100%;
   top: 0;
   z-index: 1;
-  max-width: 1200px;
-  align-self: center;
+  /* max-width: 1200px;
+  align-self: center; */
 }
 
 .navbar__container {
@@ -121,9 +121,9 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1200px;
+  /* max-width: 1200px;
   width: 100%;
-  align-self: center;
+  align-self: center; */
 }
 
 .hero__title::before {
@@ -211,9 +211,9 @@ p {
 /* skills section */
 .skills {
   background: var(--sub-bg-color);
-  max-width: 1200px;
+  /* max-width: 1200px;
   width: 100%;
-  align-self: center;
+  align-self: center; */
 }
 
 .skills__container {
@@ -274,9 +274,9 @@ p {
 /* contact section */
 .contact {
   background: var(--sub-bg-color);
-  max-width: 1200px;
+  /* max-width: 1200px;
   width: 100%;
-  align-self: center;
+  align-self: center; */
 }
 
 .contact__heading {
