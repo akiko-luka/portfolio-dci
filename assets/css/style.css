@@ -120,9 +120,6 @@ p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  max-width: 1200px;
-  width: 100%;
-  align-self: center;
 }
 
 .hero__title::before {
