@@ -66,7 +66,7 @@ p {
   background: var(--navbar-bg-color);
   position: sticky;
   padding: 10px;
-  height: 100%;
+  height: 100px;
   width: 100%;
   top: 0;
   z-index: 1;
@@ -109,15 +109,16 @@ p {
 
 /* hero section */
 .hero {
-  height: 100vh;
+  height: calc(100vh - 100px);
   display: grid;
   text-align: center;
   place-content: center;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
   background: url(../images/hero-bg-water-colour.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .hero__title::before {
@@ -214,7 +215,7 @@ p {
   justify-content: center;
   column-gap: 15px;
   row-gap: 20px;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .skills__text li {
@@ -237,7 +238,7 @@ p {
   gap: 1rem;
   justify-content: center;
   height: 100%;
-  padding-bottom: 5rem;
+  padding-bottom: 2.5rem;
 }
 
 .project__card {
@@ -256,6 +257,7 @@ p {
 /* contact section */
 .contact {
   background: var(--sub-bg-color);
+  height: calc(100vh - 100px);
 }
 
 .contact__heading {
@@ -311,6 +313,8 @@ label {
 input, textarea {
   padding: 0.5rem;
   border: 2px solid var(--main-font-color);
+  /* resize: none; */
+  resize: vertical;
 }
 
 .submit-btn {
