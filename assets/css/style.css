@@ -274,7 +274,7 @@ p {
 
 .fa-brands {
   border-radius: 50%;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: var(--main-font-color);
   background: var(--white-bg-navfont);
 }
