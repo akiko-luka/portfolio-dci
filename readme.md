@@ -6,7 +6,7 @@
 This project is for educational purposes only. All credit for the design is given to the original designer.
 
 ### Overview
-This portfolio is created using HTML and CSS.
+This portfolio showcases my skills and projects, which were developed using HTML and CSS. This represents my journey in web development and design.
 
 ### Tools used
 - HTML
