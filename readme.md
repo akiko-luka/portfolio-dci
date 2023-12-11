@@ -6,6 +6,7 @@
 This project is for educational purposes only. All credit for the design is given to the original designer.
 
 ### Overview
+This portfolio is created using HTML and CSS.
 
 ### Tools used
 - HTML
