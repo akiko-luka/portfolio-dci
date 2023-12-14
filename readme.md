@@ -16,5 +16,9 @@ This portfolio showcases my skills and projects, which were developed using HTML
 - Canva
 
 ## Screenshots
+
+#### Windows view
 ![](assets/images/Screenshot-portfolio1.png)
+
+#### Mobile view
 ![](assets/images/Screenshot-portfolio2.png)
